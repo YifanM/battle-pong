@@ -38,7 +38,8 @@
         android:layout_marginBottom="50dp"
         android:layout_above="@+id/twoPlayer"
         android:layout_alignRight="@+id/twoPlayer"
-        android:layout_alignEnd="@+id/twoPlayer" />
+        android:layout_alignEnd="@+id/twoPlayer"
+        android:onClick="startOnePlayer" />
 
     <TextView
         android:background="@drawable/border"
@@ -50,7 +51,8 @@
         android:clickable="true"
         android:layout_marginBottom="50dp"
         android:layout_above="@+id/about"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="startTwoPlayer" />
 
     <TextView
         android:background="@drawable/border"

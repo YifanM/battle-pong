@@ -4,4 +4,5 @@
     <string name="onePlayer">Single Player</string>
     <string name="twoPlayer">Two Players</string>
     <string name="about">About</string>
+    <string name="title_activity_two_player">TwoPlayerActivity</string>
 </resources>
