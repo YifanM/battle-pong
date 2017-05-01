@@ -1,9 +1,12 @@
 package com.example.yifan.battlepong;
 
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,6 +14,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Typeface ralewayThin = Typeface.createFromAsset(getAssets(), "fonts/Raleway-Thin.ttf");
+        Typeface raleway = Typeface.createFromAsset(getAssets(), "fonts/Raleway-Regular.ttf");
+        TextView titleTextView = (TextView)findViewById(R.id.title);
+        TextView[] menuOptions = {(TextView)findViewById(R.id.singlePlayer), (TextView)findViewById(R.id.twoPlayer), (TextView)findViewById(R.id.about)};
+        titleTextView.setTypeface(ralewayThin);
+        for (TextView textItem : menuOptions) {
+            textItem.setTypeface(raleway);
+        }
     }
 
     @Override
