@@ -1,3 +1,5 @@
+package objects;
+
 public class GameObject {
     private String name;
     private String colour;
